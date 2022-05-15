@@ -1,0 +1,9 @@
+n=int(input())
+i=1
+while(i<n):
+    if(i*(i+1)==n):
+        print("YES")
+        break
+    i=i+1
+else:
+     print("NO")
