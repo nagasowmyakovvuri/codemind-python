@@ -1,14 +1,15 @@
 n,m=map(int,input().split())
 a=list(map(int,input().split()))
 b=list(map(int,input().split()))
-k=set(a)
-l=set(b)
-p=0
-for i in k:
-    if i not in l:
-        p+=1
-for i in l:
-    if i not in k:
-        p+=1
-
-print(p)
+k=0
+a=set(a)
+b=set(b)
+j=[]
+for i in a:
+    if i  not in b:
+        k+=1
+        j.append(i)
+for i in b:
+    if i not in a and i not in j:
+        k+=1
+print(k)
