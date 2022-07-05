@@ -1,20 +1,9 @@
-a=input()
-c=0
-p=0
-l=0
+n=input()
 k=0
-s=0
-#print(ord("."))
-for i in a:
-    if ord(i)>=65 and ord(i)<=90:
-        c=c+1
-    elif ord(i)>=97 and ord(i)<=122:
-        p=p+1
-    elif i==' ':
+s="a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z, "
+p="A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z"
+
+for i in n:
+    if i not in s and i not in p:
         k+=1
-    elif i in "0123456789":
-        s+=1
-    else:
-        l=l+1
-    
-print(l)
+print(k)
