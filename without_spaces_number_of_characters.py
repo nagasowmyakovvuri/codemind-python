@@ -1,7 +1,9 @@
-a=input()
-c=0
-for i in a:
+n=input()
+k=0
+for i in range(len(n)):
+    if n[i]==' ':
+        i+=1
+    else:
+        k+=1
+print(k)
     
-    if i not in " ":
-        c=c+1
-print(c)
