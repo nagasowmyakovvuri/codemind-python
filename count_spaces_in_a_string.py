@@ -1,6 +1,6 @@
-a=input()
-c=0
-for i in a:
+n=input()
+k=0
+for i in n:
     if i==' ':
-        c=c+1
-print(c)
+        k+=1
+print(k)
