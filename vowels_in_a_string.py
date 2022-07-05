@@ -1,9 +1,12 @@
-a=input()
-p=input()
-for i in range(len(a)):
-    if a[i]==p:
+n=input()
+k=input()
+p=0
+for i in range(len(n)):
+    if n[i]==k:
         print("True")
         print(i)
-        break;
-else:
+        p+=1
+        break
+if p==0:
     print("False")
+        
