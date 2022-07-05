@@ -1,10 +1,11 @@
-a=input()
-c=0
-for i in a:
-    if i in "aeiouAEIOU":
-        c=c+1
-    if i==" ":
-        print(c,end=' ')
-        c=0
-else:
-    print(c)
+n=input()
+k=0
+f=n.split()
+g="a,e,i,o,u,A,E,I,O,U"
+for i in f:
+    k=0
+    for j in i:
+        
+        if j in g:
+           k+=1
+    print(k,end=' ')
