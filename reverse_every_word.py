@@ -1,4 +1,5 @@
 n=input()
-l=n.split()
+l=n.split(' ')
 for i in l:
-    print(i[::-1],end=' ')
+    k=i
+    print(k[::-1],end=' ')
