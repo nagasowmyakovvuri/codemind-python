@@ -1,13 +1,9 @@
 n=input()
-a='aeiou'
-k=''
-for i in a:
+l='aeiou'
+p=0
+for i in l:
     if i not in n:
-        k+=i
-if len(k)==0:
+        print(i,end=' ')
+        p+=1
+if p==0:
     print("0")
-else:
-    k=list(k)
-    k.sort()
-    print(*k)
-        
