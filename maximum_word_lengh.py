@@ -1,7 +1,6 @@
 n=input()
-l=n.split(" ")
-s=[]
+l=n.split(' ')
+k=[]
 for i in l:
-    o=len(i)
-    s.append(o)
-print(max(s))
+    k.append(len(i))
+print(max(k))
