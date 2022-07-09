@@ -1,13 +1,7 @@
 n=int(input())
-a=list(map(int,input().split()))
-l=set(a)
-k=list(l)
-##print(a)
+l=list(map(int,input().split()))
 d=[]
-for i in a:
-    c=0
-    for j in a:
-        if i==j and i not in d:
-            c=c+1
-            d.append(i)
+for i in l:
+    if d.count(i)==0:
+        d.append(i)
 print(*d)
