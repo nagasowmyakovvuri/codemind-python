@@ -1,9 +1,13 @@
 n,m=map(int,input().split())
-a=list(map(int,input().split()))
-b=list(map(int,input().split()))
-c=[]
-for i in a:
-    if i in b:
-        if i not in c:
-            c.append(i)
-print(*c)
+l=list(map(int,input().split()))
+p=list(map(int,input().split()))
+##print(l)
+##print(p)
+p=set(p)
+p=list(p)
+s=[]
+for i in l:
+    if i in p:
+        if s.count(i)==0:
+            s.append(i)
+print(*s)
