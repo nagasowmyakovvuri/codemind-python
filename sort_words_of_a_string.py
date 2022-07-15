@@ -25,4 +25,3 @@ for i in l:
     for i in a:
         f+=i
     print(f,end=' ')
-        
