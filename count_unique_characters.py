@@ -1,9 +1,11 @@
 n=input()
 s=''
-p=0
 n=n.lower( )
+p=0
+s=''
 for i in n:
-    if n.count(i)==1 and i!=' ':
-        p+=1
-     
+    if n.count(i)==1:
+        if i not in s and i !=' ':
+            p+=1
+            s+=i
 print(p)
