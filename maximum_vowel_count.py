@@ -1,17 +1,12 @@
-a=input()
-c=0
-s=' '
-f=1
+n=input().lower()
 p=0
-for i in a:
-    if i in "aeiouAEIOU":
-        c=c+1
-    if i==" ":
-        s+=str(c)
-        c=0
-        p=1
-if p==0:
-    print(c)
-    f=0
-if f==1:
-       print(max(s))
+d=[]
+l=n.split(' ')
+
+for i in l:
+    p=0
+    for j in i:
+        if j in 'aeiou':
+            p+=1
+    d.append(p)
+print(max(d))
