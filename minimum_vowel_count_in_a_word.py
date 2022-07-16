@@ -1,12 +1,10 @@
-n=input()
-k=n.split(' ')
-s='aeiou'
-p=[]
-for i in k:
-    i=i.lower()
-    k=0
+n=input().lower( )
+d=[]
+l=n.split(' ')
+for i in l:
+    p=0
     for j in i:
-        if j in s:
-            k+=1
-    p.append(k)
-print(min(p))
+        if j in 'aeiou':
+            p+=1
+    d.append(p)
+print(min(d))
