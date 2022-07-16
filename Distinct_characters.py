@@ -1,12 +1,10 @@
 n=input()
-s=''
-n=n.lower( )
+n=n.lower()
+k=''
 for i in n:
-    if n.count(i)==1 and i!=' ':
-        s+=i
-s=list(s)
-s.sort( )
-l=''
-for i in s:
-    l+=i
-print(l)
+    if i not in k and i!=' ':
+        k+=i
+k=list(k)
+k.sort()
+for i in k:
+    print(i,end='')
