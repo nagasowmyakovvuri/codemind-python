@@ -1,14 +1,12 @@
 n=input()
-d='aeiouAEIOU'
-p=0
-s=''
+a='aeiouAEIOU'
+p=[]
 for i in n:
-    if i in d:
-        if i not in s:
-            s+=i
-
-if len(s)==0:
+    if i in a:
+        if i not in p:
+           p.append(i)
+        
+if len(p)==0:
     print('-1')
 else:
-    for i in s:
-        print(i,end=' ')
+    print(*p)
