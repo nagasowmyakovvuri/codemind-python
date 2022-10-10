@@ -1,0 +1,42 @@
+def binary(n):
+    if n=="0":
+        return "0000"
+    elif n=="1":
+        return "0001"
+    elif n=="2":
+        return "0010"
+    elif n=="3":
+        return "0011"
+    elif n=="4":
+        return "0100"
+    elif n=="5":
+        return "0101"
+    elif n=="6":
+        return "0110"
+    elif n=="7":
+        return "0111"
+    elif n=="8":
+        return "1000"
+    elif n=="9":
+        return "1001"
+    elif n=="A" or n=="a":
+        return "1010"
+    elif n=="B" or n=="b":
+        return "1011"
+    elif n=="C" or n=="c":
+        return "1100"
+    elif n=="D" or n=="d":
+        return "1101"
+    elif n=="E" or n=="e":
+        return "1110"
+    else:
+        return "1111"
+n=int(input())
+while n!=0:
+    d=input()
+    #print(d)
+    g=""
+    for i in d:
+        g+=binary(i)
+    print(g)
+    n-=1
