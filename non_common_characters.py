@@ -1,12 +1,20 @@
 n=input().lower( )
-l=input().lower( )
-p=[]
+m=input().lower()
+s=''
 for i in n:
-    if i not in l and i!=' ' and i not in p:
-        p.append(i)
-for i in l:
-    if i not in n and i!=' ' and i not in p:
-        p.append(i)
-p.sort()
-for i in p:
-    print(i,end='')
+    if i not in m:
+        if i not in s and i!=" ":
+            s+=i
+for i in m:
+    if i not in n:
+        if i not in s and i!=" ":
+            s+=i
+s=list(s)
+s.sort()
+j=""
+for i in s:
+    j+=i
+if len(s)!=0:
+    print(j)
+else:
+    print('-1')
