@@ -1,16 +1,16 @@
-n=input().lower( )
+n=input().lower()
 m=input().lower()
-s=''
+s=""
 for i in n:
     if i in m:
         if i not in s and i!=" ":
             s+=i
-s=list(s)
-s.sort()
-j=""
-for i in s:
-    j+=i
-if len(s)!=0:
-    print(j)
+l=list(s)
+l.sort()
+k=""
+for i in l:
+    k+=i
+if len(k)>0:
+    print(k)
 else:
-    print('-1')
+    print("-1")
