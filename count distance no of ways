@@ -1,0 +1,13 @@
+def d(p):
+    if p==0:
+        return 0
+    elif p==1:
+        return 1
+    elif p==2:
+        return 2
+    elif p==3:
+        return 4
+    else:
+        return d(p-1)+d(p-2)+d(p-3)
+n=int(input())
+print(d(n))
