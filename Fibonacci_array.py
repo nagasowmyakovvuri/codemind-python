@@ -1,13 +1,13 @@
 n=int(input())
-a=list(map(int,input().split()))
-p=0
-for i in range(2,n):
-    if a[i]==a[i-1]+a[i-2]:
-        p=1
+l=list(map(int,input().split()))
+f=0
+for i in range(2,len(l)):
+    if l[i]==l[i-1]+l[i-2]:
+        f=1
     else:
-        p=0
+        f=0
         break
-if p==0:
+if f==0:
     print("no")
 else:
     print("yes")
