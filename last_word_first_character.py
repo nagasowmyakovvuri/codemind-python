@@ -1,4 +1,4 @@
 n=input()
-l=n.split()
-k=l[len(l)-1]
-print(k[0])
+k=n.split()
+l=k[len(k)-1]
+print(l[0])
